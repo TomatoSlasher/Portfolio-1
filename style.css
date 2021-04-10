@@ -30,7 +30,7 @@ body {
 }
 
 .logo-style {
-  color: red;
+  color: var(--primary);
   padding-right: 0.2rem;
 }
 
