@@ -1,0 +1,268 @@
+:root {
+  --primary: #007cff;
+  --bg: linear-gradient(to top left, #007cff, #64a5ff);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.container .logo {
+  font-size: 30px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.logo-style {
+  color: #007cff;
+  padding-right: 0.2rem;
+}
+
+.container ul {
+  display: flex;
+  list-style: none;
+  justify-self: end;
+}
+
+.container ul li {
+  padding: 1rem;
+}
+
+.container a {
+  color: black;
+  text-decoration: none;
+}
+.container a:hover {
+  color: #007cff;
+}
+.showcase {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+}
+
+.showcase-txt {
+  margin: 0rem 6rem;
+  margin-bottom: 6rem;
+}
+.showcase-txt h1 {
+  font-size: 63px;
+  color: var(--primary);
+}
+.showcase-txt p {
+  margin-bottom: 2rem;
+  font-size: 20px;
+}
+.showcase-img img {
+  width: 650px;
+}
+
+.showcase a {
+  color: black;
+  padding: 0.8rem 2rem;
+  border-radius: 40px;
+  text-decoration: none;
+  transition: background-color 0.5s ease-in-out;
+  border: 1px black solid;
+}
+.showcase a:hover {
+  background-color: #007cff;
+}
+.sec1container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  background-color: white;
+  border-radius: 10px;
+  margin: 3rem;
+  align-items: center;
+}
+
+.sec1txt {
+  border-radius: 20px;
+  justify-content: center;
+  background: #eee;
+  padding: 3rem;
+  margin-left: 5rem;
+  box-shadow: 10px 10px 50px 3px rgba(0, 0, 0, 0.6);
+}
+.sec1txt a {
+  text-decoration: none;
+  color: var(--primary);
+  line-height: 3rem;
+}
+
+.sec1txt a:hover {
+  border-bottom: var(--primary) 1px solid;
+}
+
+.sec1box {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  margin-left: 10rem;
+  height: 500px;
+  width: 350px;
+  color: white;
+  background-image: var(--bg);
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 10px 10px 50px 5px rgba(0, 0, 0, 0.6);
+
+  animation: animate1 1s forwards 1s ease-in-out;
+}
+
+/* @keyframes animate1 {
+  from {
+    height: 200px;
+  }
+  to {
+    height: 500px;
+  }
+} */
+.sec1box-header {
+  grid-row: 1 / span 2;
+}
+
+.boxdesc {
+  background-color: #007cff;
+  padding: 2rem;
+
+  border-radius: 20px;
+}
+
+.asseen h1 {
+  text-align: center;
+  margin: 2rem;
+}
+
+.logoseen {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  background-image: var(--bg);
+  padding: 2rem;
+  align-items: center;
+}
+.logoseen i {
+  font-size: 70px;
+  margin-left: 5rem;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: black;
+  height: 400px;
+}
+.links {
+  color: white;
+  width: auto;
+  margin: auto;
+}
+.links ul {
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
+  padding: 1rem;
+}
+
+.links ul li {
+  margin-top: 1rem;
+}
+.links ul li a {
+  text-decoration: none;
+  text-align: center;
+  color: #007cff;
+}
+.links ul li a:hover {
+  border-bottom: 1px var(--primary) solid;
+}
+.social {
+  font-size: 50px;
+  width: auto;
+  margin: auto;
+}
+.social i {
+  color: #007cff;
+}
+.social a:hover {
+  opacity: 0.7;
+}
+
+.about {
+  color: white;
+  width: auto;
+  margin: auto;
+  padding: 4rem;
+}
+
+.sec2container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 600px;
+}
+
+.sec2box {
+  width: auto;
+  margin: auto;
+  text-align: center;
+  border-radius: 20px;
+  /* animation: sec2 1s forwards ease-in-out; */
+  /* transition: padding-bottom 0.5s ease-in-out; */
+
+  margin: 4rem 2rem;
+}
+/* @keyframes sec2 {
+  form {
+  }
+  to {
+    background-color: #007cff;
+  }
+} */
+
+.sec2box:hover {
+  border: #007cff 3px solid;
+}
+
+.sec2box i {
+  font-size: 100px;
+  line-height: 10rem;
+}
+
+.sec2box h1 {
+  font-size: 40px;
+  margin-top: 2rem;
+}
+
+.sec2box p {
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+.sec2box a {
+  color: black;
+  padding: 0.8rem 2rem;
+  border-radius: 40px;
+  text-decoration: none;
+  transition: background-color 0.5s ease-in-out;
+  border: 2px black solid;
+  line-height: 6rem;
+}
+
+.sec2box a:hover {
+  background-color: #007cff;
+}
